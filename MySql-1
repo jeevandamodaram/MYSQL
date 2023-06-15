@@ -1,0 +1,30 @@
+Create Database turt;
+
+show databases;
+
+use turt;
+
+CREATE TABLE if NOT EXISTS EMP (
+    EMPID int,
+    LName varchar(255),
+    FName varchar(255),
+    Salary INT,
+    DOJ DATE,
+    City varchar(255)
+);
+
+DROP TABLE EMP;
+
+SHOW tables;
+
+DESC EMP;
+
+SHOW tables;
+
+
+INSERT INTO EMP (EMPID,LName,FName,Salary,DOJ,City) VALUES (101,'kumar','jeevan',20000,'2023-7-7','tpt');
+
+INSERT INTO EMP (EMPID,LName,FName,Salary,DOJ,City) VALUES  (102,'Prasad','Siva',100000,'2023-6-7','tpt'),(103,'Lakshmi','Prasana',50000,'2023-5-7','tpt');
+
+Select * from EMP;
+
